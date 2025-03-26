@@ -1,0 +1,42 @@
+{% extends 'home/base.html' %}
+{% block Title %}
+        Home
+    {% endblock %}
+  
+    {% block name %}
+{% endblock %}
+{% block homeactive %} active {% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="card">
+        <div class="container">
+        <img src="https://www.codingem.com/wp-content/uploads/2023/02/how-to-start-a-coding-blog.png" class="card-img-top" alt="Blog photo">
+    </div>
+      
+        <div class="card-body">
+          <h5 class="card-title">Code Blog</h5>
+          <p class="card-text">code blog read  our blogs</p>
+          <a href="{% url 'blog' %}" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+</br>
+</br>
+</br>
+</br>
+
+<div class="container">
+<div class="card">
+    <div class="container">
+    <img src="https://snappify.com/images/blog/covers/best-ai-code-tools.png" class="card-img-top" alt="Blog photo">
+</div>
+  
+    <div class="card-body">
+      <h5 class="card-title">AI Code Blog</h5>
+      <p class="card-text">Ai code blod Read and bulit a your own</p>
+      <a href="{% url 'blog' %}" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
